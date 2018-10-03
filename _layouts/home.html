@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="landing-page sidebar-collapse">
+
+    {%- include header.html -%}
+
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+    {%- include scripts.html -%}
+  </body>
+</html>

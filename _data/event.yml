@@ -1,0 +1,13 @@
+url: "https://www.eventbrite.com/e/hack-denton-tickets-50109987321"
+price: "15.00"
+date: "Nov 30 - Dec 1, 2018"
+venue:
+  name: "Stoke Coworking"
+  url: "http://stokedenton.com"
+  address:
+    street: "608 E. Hickory #128"
+    city: "Denton"
+    state: "Texas"
+    zip: "76205"
+    country: "USA"
+    full: "608 E. Hickory #128, Denton, Texas 76205"
