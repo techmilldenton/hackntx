@@ -96,33 +96,24 @@ layout: home
         <div class="features">
         	<h2>What's in it for me?</h2>
           <div class="row">
-            <div class="col-md-4">
-              <div class="info card">
-                <div class="icon icon-info">
-                  <i class="material-icons">attach_money</i>
-                </div>
-                <h4 class="info-title">Cash Prizes</h4>
-                <p>While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info card">
-                <div class="icon icon-success">
-                  <i class="material-icons">card_giftcard</i>
-                </div>
-                <h4 class="info-title">Swag</h4>
-                <p>Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info card">
-                <div class="icon icon-danger">
-                  <i class="material-icons">thumb_up</i>
-                </div>
-                <h4 class="info-title">Experience</h4>
-                <p>Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before.</p>
-              </div>
-            </div>
+              {%- include components/card.html
+                title="Cash Prizes"
+                iconStatus="icon-info"
+                iconType="attach_money"
+                content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
+              -%}
+              {%- include components/card.html
+                title="Swag"
+                iconStatus="icon-success"
+                iconType="card_giftcard"
+                content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
+              -%}
+              {%- include components/card.html
+                title="Experience"
+                iconStatus="icon-danger"
+                iconType="thumb_up"
+                content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+              -%}
           </div>
         </div>
       </div>
