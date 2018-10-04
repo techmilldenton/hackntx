@@ -1,10 +1,7 @@
 var gulp         = require('gulp');
-var path         = require('path');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps   = require('gulp-sourcemaps');
-var connect      = require('gulp-connect');
-var open         = require('gulp-open');
 
 var Paths = {
   HERE                 : './',
