@@ -1,17 +1,33 @@
 {
   "name": "hackntx",
-  "description": "Hack NTX",
-  "version": "1.0",
-  "homepage": "https://www.hackntx.com",
-  "author": "Kyle Taylor",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Static site for Hack NTX",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techmilldenton/hackntx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techmilldenton/hackntx/issues"
+  },
+  "homepage": "https://github.com/techmilldenton/hackntx#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-clean": "^0.3.2",
+    "gulp": "^3",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-connect": "^5.6.1",
     "gulp-install": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.3",
-    "gulp-open": "^2.1.0"
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
   }
 }
