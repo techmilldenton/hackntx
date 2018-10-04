@@ -37,6 +37,10 @@ Thumbs.db
 ##########
 .sass-cache
 
+# Node #
+########
+node_modules
+
 # Local dev environments #
 ##########################
 .idea
