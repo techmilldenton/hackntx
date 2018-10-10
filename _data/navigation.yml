@@ -1,0 +1,27 @@
+toc:
+  - title: About
+    url: "#"
+    children:
+      - title: Challenges
+        url: /challenges
+      - title: Rules
+        url: /rules
+      - title: Judging Criteria
+        url: /judging-criteria
+      - title: Code of Conduct
+        url: /conduct
+  - title: Schedule
+    url: /schedule
+  - title: Sponsors
+    url: /sponsors
+  - title: Contact
+    url: /contact
+  - title: Register
+    url: https://www.eventbrite.com/e/hack-ntx-tickets-50109987321
+    class: "btn btn-success"
+    target: "_blank"
+footer:
+  - title: Home
+    url: /
+  - title: FAQ
+    url: /faq
