@@ -6,7 +6,7 @@ img: assets/img/schedule.jpg
 ---
 
 ## Friday, November 30th
-<div class="table-responsive col-md-10 offset-md-1">
+<div class="table-responsive">
 	<table class="table">
 		<thead>
 			<tr>
