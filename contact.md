@@ -19,15 +19,15 @@ permalink: /contact
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group label-floating is-empty bmd-form-group">
-								<label class="bmd-label-floating">First name</label>
-								<input type="text" name="name" class="form-control">
+								<label class="bmd-label-floating" for="first">First name</label>
+								<input type="text" name="first" class="form-control">
 								<span class="material-input"></span>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group label-floating is-empty bmd-form-group">
-								<label class="bmd-label-floating">Last name</label>
-								<input type="text" name="name" class="form-control">
+								<label class="bmd-label-floating" for="last">Last name</label>
+								<input type="text" name="last" class="form-control">
 								<span class="material-input"></span>
 							</div>
 						</div>
@@ -38,8 +38,8 @@ permalink: /contact
 						<span class="material-input"></span>
 					</div>
 					<div class="form-group label-floating is-empty bmd-form-group">
-						<label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
-						<textarea name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+						<label for="message" class="bmd-label-floating">Your Message</label>
+						<textarea name="message" class="form-control" rows="6"></textarea>
 						<span class="material-input"></span>
 					</div>
 				</div>
