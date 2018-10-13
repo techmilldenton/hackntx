@@ -11,17 +11,21 @@ var Paths = {
   SCSS                 : './assets/scss/**/**'
 };
 
-gulp.task('compile:scss', function () {
-  return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
+gulp.task('compile:scss', gulp.series(function(done) {
+  gulp.src(Paths.SCSS_TOOLKIT_SOURCES, { allowEmpty: true })
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write(Paths.HERE))
     .pipe(gulp.dest(Paths.CSS));
-});
+  done();
+}));
 
-gulp.task('watch', function () {
+gulp.task('watch', gulp.series(function (done) {
   gulp.watch(Paths.SCSS, ['compile:scss']);
-});
+  done();
+}));
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch', function(done) { 
+  done();
+}));
