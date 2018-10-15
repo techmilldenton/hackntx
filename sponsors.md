@@ -63,7 +63,7 @@ permalink: /sponsors
 	<div class="row vertical-align bot-right p-3 mb-5">
 		<div class="col-md-3 text-center mb-3">
 			<h3 class="mb-0">Smart City Tier</h3>
-			<h3 class="card-title mt-1 mb-3">$2500</h3>
+			<h3 class="card-title mt-1 mb-3">$1500</h3>
 			<p>
 				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C7EJ8D4SYEW5W" title="Smart City Express Pay" alt="$2500 donation link" class="btn btn-success">Express Pay</a>
 				<br>
@@ -111,7 +111,7 @@ permalink: /sponsors
 	<div class="row vertical-align bot-right p-3 mb-5">
 		<div class="col-md-3 text-center mb-3">
 			<h3 class="mb-0">Civic Duties Tier</h3>
-			<h3 class="card-title mt-1 mb-3">< $1000</h3>
+			<h3 class="card-title mt-1 mb-3">≤ $500</h3>
 			<p>
 				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63FZDYQLX25LC" title="Civic Duties Express Pay" alt="General donation link" class="btn btn-success">Express Pay</a>
 				<br>
