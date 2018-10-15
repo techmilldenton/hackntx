@@ -1,0 +1,29 @@
+# Sponsor template that goes under appropriate tier
+# -name: Sponsor name
+#  img: img url
+#  url: Sponsor's site url
+
+smart_city_tier:
+  - name: "TechMill"
+    url: https://techmill.co/
+    img: /assets/img/sponsors/techmillco.jpeg
+city_planner_tier:
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/opendenton.jpg
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/opendenton.jpg
+  - name: "TechMill"
+    url: https://techmill.co/
+    img: /assets/img/sponsors/techmillco.jpeg
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/stoke.png
+civic_duties_tier:
+    - name: Open Denton
+      url: https://www.opendenton.com/
+      img: /assets/img/sponsors/opendenton.jpg
+    - name: Open Denton
+      url: https://www.opendenton.com/
+      img: /assets/img/sponsors/opendenton.jpg
