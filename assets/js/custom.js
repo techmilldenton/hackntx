@@ -19,7 +19,7 @@ $(document).ready(function(){
     // submit contact form with ajax
     $('#contact-form').submit(function(e) {
       e.preventDefault();
-      var actionUrl = '//formspree.io/sponsor@techmill.co'
+      var actionUrl = '//formspree.io/sffitzpatrick@gmail.com'
       $.ajax({
         method: 'POST',
         url: actionUrl,
