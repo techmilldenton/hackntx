@@ -50,6 +50,54 @@ layout: home
     </div>
   </div>
 </div>
+<div class="section">
+<div class="container">
+    <div class="row">
+     <div class="col-md-8 offset-md-2">
+       <h2 class="text-center title">How can my city participate?</h2>
+       <br>
+       The purpose of Hack NTX is to integrate passionate technologists with innovative cities to validate or prototype new smart city projects, or brainstorm and address problems city officials see in their own community that could be positively addressed through technology. <strong>Are you a city with a project? Visit our <a href="/sponsors" title="Hack NTX Sponsors">sponsor page</a> for more information, or <a href="mailto:sponsor@techmill.co">contact us</a> directly.</strong>
+       <br><br>
+       Here are some categories of projects that could be pitched at Hack NTX.
+     </div>
+   </div>
+    <div class="row">
+      <div class="col-md-3">
+{%- include components/card.html
+        title="Climate"
+        iconStatus="icon-info"
+        iconType="cloud"
+        content="What can we do to better monitor our air quality or gather better data for more robust air quality data?"
+        -%}
+      </div>
+      <div class="col-md-3">
+{%- include components/card.html
+        title="Transportation"
+        iconStatus="icon-info"
+        iconType="commute"
+        content="How do we encourage citizens to ride bikes, walk and use transit more instead of riding in cars alone?"
+        -%}
+      </div>
+      <div class="col-md-3">
+{%- include components/card.html
+        title="Utilities"
+        iconStatus="icon-info"
+        iconType="toys"
+        content="How can we increase the number of residents utilizing our renewable energy programs or incentives?"
+        -%}
+      </div>
+      <div class="col-md-3">
+{%- include components/card.html
+        title="Safety"
+        iconStatus="icon-info"
+        iconType="feedback"
+        content="How can we provide an easier, more accurate way for citizens to submit safety issues for the cities to review?"
+        -%}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section-tabs">
 <div class="container">
   <div class="row">
    <div class="col-md-8 offset-md-2">
@@ -104,8 +152,8 @@ layout: home
        <br>
      </div>
    </div>
-   <!-- End Tabs with icons on Card -->
  </div>
+</div>
 </div>
 </div>
 <div class="section section-tabs">
@@ -113,28 +161,35 @@ layout: home
   <div class="features">
    <h2 class="title text-center">What's in it for me?</h2>
    <div class="row">
-    {%- include components/card.html
-      title="Cash Prizes"
-      iconStatus="icon-info"
-      iconType="attach_money"
-      content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
-      -%}
+    <div class="col-md-4">
       {%- include components/card.html
-        title="Swag"
+        title="Cash Prizes"
         iconStatus="icon-success"
-        iconType="card_giftcard"
-        content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
+        iconType="attach_money"
+        content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
         -%}
+      </div>
+      <div class="col-md-4">
         {%- include components/card.html
-          title="Experience"
-          iconStatus="icon-danger"
-          iconType="thumb_up"
-          content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+          title="Swag"
+          iconStatus="icon-info"
+          iconType="card_giftcard"
+          content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
           -%}
+        </div>
+        <div class="col-md-4">
+          {%- include components/card.html
+            title="Experience"
+            iconStatus="icon-danger"
+            iconType="thumb_up"
+            content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+            -%}
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <hr>
   <div class="container">
    <div class="section section-contacts">
     <div class="row">
@@ -146,7 +201,7 @@ layout: home
        <a href="mailto:sponsor@techmill.co" class="btn btn-success btn-lg btn-raised">Contact Us</a>
        <br><br>
        <p>
-         Download our <a style="text-decoration: underline;" href="{{ '/assets/docs/hackntx-sponsor.pdf' | prepend: baseurl }}" title="Sponsorship packet">sponsorship packet</a></p>
+         Download our <a style="text-decoration: underline;" href="{{ '/assets/docs/2018-hackntx-sponsor.pdf' | prepend: baseurl }}" title="Sponsorship packet">sponsorship packet</a></p>
        </div>
      </div>
    </div>
