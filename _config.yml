@@ -58,6 +58,15 @@ social:
       - https://www.linkedin.com/company/techmill-llc
       - https://github.com/techmilldenton
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: assets/img/social/twitter-In-Stream_Wide___hackntx-social.jpg
+        height: 640
+        width: 1280
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
