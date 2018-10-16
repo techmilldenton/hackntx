@@ -23,9 +23,11 @@
   },
   "homepage": "https://github.com/techmilldenton/hackntx#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.1",
+    "gulp-shell": "^0.6.5",
     "gulp-sourcemaps": "^2.6.4"
   }
 }
