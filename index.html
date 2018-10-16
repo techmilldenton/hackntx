@@ -113,24 +113,30 @@ layout: home
   <div class="features">
    <h2 class="title text-center">What's in it for me?</h2>
    <div class="row">
-    {%- include components/card.html
-      title="Cash Prizes"
-      iconStatus="icon-info"
-      iconType="attach_money"
-      content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
-      -%}
+    <div class="col-md-4">
       {%- include components/card.html
-        title="Swag"
+        title="Cash Prizes"
         iconStatus="icon-success"
-        iconType="card_giftcard"
-        content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
+        iconType="attach_money"
+        content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
         -%}
+      </div>
+      <div class="col-md-4">
         {%- include components/card.html
-          title="Experience"
-          iconStatus="icon-danger"
-          iconType="thumb_up"
-          content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+          title="Swag"
+          iconStatus="icon-info"
+          iconType="card_giftcard"
+          content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
           -%}
+        </div>
+        <div class="col-md-4">
+          {%- include components/card.html
+            title="Experience"
+            iconStatus="icon-danger"
+            iconType="thumb_up"
+            content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+            -%}
+          </div>
         </div>
       </div>
     </div>
