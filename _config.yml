@@ -63,7 +63,7 @@ defaults:
       path: ""
     values:
       image:
-        path: assets/img/twitter-In-Stream_Wide___hackntx-social.jpg
+        path: assets/img/social/twitter-In-Stream_Wide___hackntx-social.jpg
         height: 640
         width: 1280
 
