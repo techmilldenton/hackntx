@@ -101,8 +101,8 @@ permalink: /sponsors
 					<li>Two solo social media shout outs on all channels</li>
 					<li>Company name included in press release</li>
 					<li>Company logo displayed in all paid marketing</li>
-					<li>Opportunity to provide a workshop or speak</li>
-					<li>8 participant and/or audience tickets (total)</li>
+					<li>Opportunity to speak during keynote or closing</li>
+					<li>4 participant and/or audience tickets (total)</li>
 					<li>Includes everything in <strong>City Planner</strong> and <strong>Civic Duties</strong></li>
 				</ul>
 			</div>
@@ -123,10 +123,9 @@ permalink: /sponsors
 				<div class="col-md-6 mb-3">
 					<ul>
 						<li>Opportunity to display sign or banner at the event</li>
-						<li>Logo displayed on neighborhood marketing</li>
-						<li>Logo displayed on college marketing</li>
 						<li>Booth or table at event</li>
-						<li>4 participant and/or audience tickets</li>
+						<li>2 participant and/or audience tickets</li>
+						<li>Logo included on <a href="#shirt">hackathon shirt*</a></li>
 						<li>Includes everything in <strong>Civic Duties</strong></li>
 					</ul>
 				</div>
@@ -151,7 +150,6 @@ permalink: /sponsors
 							<li>Organization logo included in all event slide decks</li>
 							<li>Group social media shoutout on all channels</li>
 							<li>Mentioned on stage by the event facilitator</li>
-							<li>2 participant and/or audience tickets</li>
 						</ul>
 					</div>
 				</div>
@@ -165,7 +163,7 @@ permalink: /sponsors
 					<div class="col-md-10 offset-md-1 pt-5 pb-3">
 							<em>TechMill, Inc is a 501(c)(3) nonprofit organization as determined by the IRS. Donations to TechMill may be tax deductible depending on details. Consult your tax professional.<br>
 								<br>
-							* Sponsorship payment will need to be made before shirt production begins (1-2 weeks before event)</em>
+							<span id="shirt">* Sponsorship payment will need to be made before shirt production begins (1-2 weeks before event)</span></em>
 					</div>
 				</div>
 			</div>
