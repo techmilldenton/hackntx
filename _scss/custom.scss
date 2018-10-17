@@ -145,3 +145,8 @@
   .community--sponsor-grid { @include sponsor-grid-tier(120px); }
 
 }
+
+#off-canvas {
+	display: none;
+	visibility: hidden;
+}
