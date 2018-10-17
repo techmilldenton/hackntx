@@ -51,7 +51,7 @@ layout: home
   </div>
 </div>
 <div class="section">
-<div class="container">
+  <div class="container">
     <div class="row">
      <div class="col-md-8 offset-md-2">
        <h2 class="text-center title">How can my city participate?</h2>
@@ -61,9 +61,9 @@ layout: home
        Here are some categories of projects that could be pitched at Hack NTX.
      </div>
    </div>
-    <div class="row">
-      <div class="col-md-3">
-{%- include components/card.html
+   <div class="row">
+    <div class="col-md-3">
+      {%- include components/card.html
         title="Climate"
         iconStatus="icon-info"
         iconType="cloud"
@@ -71,127 +71,203 @@ layout: home
         -%}
       </div>
       <div class="col-md-3">
-{%- include components/card.html
-        title="Transportation"
-        iconStatus="icon-info"
-        iconType="commute"
-        content="How do we encourage citizens to ride bikes, walk and use transit more instead of riding in cars alone?"
-        -%}
+        {%- include components/card.html
+          title="Transportation"
+          iconStatus="icon-info"
+          iconType="commute"
+          content="How do we encourage citizens to ride bikes, walk and use transit more instead of riding in cars alone?"
+          -%}
+        </div>
+        <div class="col-md-3">
+          {%- include components/card.html
+            title="Utilities"
+            iconStatus="icon-info"
+            iconType="toys"
+            content="How can we increase the number of residents utilizing our renewable energy programs or incentives?"
+            -%}
+          </div>
+          <div class="col-md-3">
+            {%- include components/card.html
+              title="Safety"
+              iconStatus="icon-info"
+              iconType="feedback"
+              content="How can we provide an easier, more accurate way for citizens to submit safety issues for the cities to review?"
+              -%}
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-{%- include components/card.html
-        title="Utilities"
-        iconStatus="icon-info"
-        iconType="toys"
-        content="How can we increase the number of residents utilizing our renewable energy programs or incentives?"
-        -%}
-      </div>
-      <div class="col-md-3">
-{%- include components/card.html
-        title="Safety"
-        iconStatus="icon-info"
-        iconType="feedback"
-        content="How can we provide an easier, more accurate way for citizens to submit safety issues for the cities to review?"
-        -%}
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section section-tabs">
-<div class="container">
-  <div class="row">
-   <div class="col-md-8 offset-md-2">
-     <h2 class="text-center title">Who can attend?</h2>
-     <br>
-     <!-- Tabs with icons on Card -->
-     <div class="card card-nav-tabs">
-       <div class="card-header card-header-success">
-        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-        <div class="nav-tabs-navigation">
-         <div class="nav-tabs-wrapper">
-           <ul class="nav nav-tabs" data-tabs="tabs">
-             <li class="nav-item">
-               <a class="nav-link active" href="#developers" data-toggle="tab">
-                 <i class="material-icons">build</i>Developers
-               </a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#designers" data-toggle="tab">
-                 <i class="material-icons">format_shapes</i>Designers
-               </a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#nontechnical" data-toggle="tab">
-                 <i class="material-icons">extension</i>Non-Technical
-               </a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#students" data-toggle="tab">
-                 <i class="material-icons">school</i>Students
-               </a>
-             </li>
-           </ul>
+      <div class="section section-tabs">
+        <div class="container">
+          <div class="row">
+           <div class="col-md-8 offset-md-2">
+             <h2 class="text-center title">Who can attend?</h2>
+             <br>
+             <!-- Tabs with icons on Card -->
+             <div class="card card-nav-tabs">
+               <div class="card-header card-header-success">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                 <div class="nav-tabs-wrapper">
+                   <ul class="nav nav-tabs" data-tabs="tabs">
+                     <li class="nav-item">
+                       <a class="nav-link active" href="#developers" data-toggle="tab">
+                         <i class="material-icons">build</i>Developers
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#designers" data-toggle="tab">
+                         <i class="material-icons">format_shapes</i>Designers
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#nontechnical" data-toggle="tab">
+                         <i class="material-icons">extension</i>Non-Technical
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#students" data-toggle="tab">
+                         <i class="material-icons">school</i>Students
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body "><br>
+               <div class="tab-content text-center">
+                 <div class="tab-pane active" id="developers">
+                   <p>For those who think Python isn't a pet and JSON isn't the name of a deli, then you're already halfway there! Hackathons are technical in nature and needs developers who can take solution concepts and turn them into practical applications. Whether you're piecing together APIs or building on top of a new framework - developers are crucial to delivering projects.</p>
+                 </div>
+                 <div class="tab-pane" id="designers">
+                   <p>A user interface is like a joke - if you have to explain it, it's not very good. Designers can provide invaluable insight into the user interface and user experience when developing a new product. Developers and designers go hand-in-hand to delivering functional and usable software.</p>
+                 </div>
+                 <div class="tab-pane" id="nontechnical">
+                   <p>A project without a purpose is just code and colors. Non-technical participants can encompass a number of roles, but generally are business development or subject matter experts who can provide insight, logic, and reason as to what the projects are actually trying to solve.</p>
+                 </div>
+                 <div class="tab-pane" id="students">
+                   <p>The first part to getting involved is showing up! This hackathon is not limited to "professionals" by any means. Whether you're an expert in NodeJS or blockchain - or just trying to apply those C++ courses into a practical project - this event will provide you with invaluable experience.<br><br>*You must be 18+ to participate.</p>
+                 </div>
+               </div>
+               <br>
+             </div>
+           </div>
          </div>
        </div>
-     </div>
-     <div class="card-body "><br>
-       <div class="tab-content text-center">
-         <div class="tab-pane active" id="developers">
-           <p>For those who think Python isn't a pet and JSON isn't the name of a deli, then you're already halfway there! Hackathons are technical in nature and needs developers who can take solution concepts and turn them into practical applications. Whether you're piecing together APIs or building on top of a new framework - developers are crucial to delivering projects.</p>
-         </div>
-         <div class="tab-pane" id="designers">
-           <p>A user interface is like a joke - if you have to explain it, it's not very good. Designers can provide invaluable insight into the user interface and user experience when developing a new product. Developers and designers go hand-in-hand to delivering functional and usable software.</p>
-         </div>
-         <div class="tab-pane" id="nontechnical">
-           <p>A project without a purpose is just code and colors. Non-technical participants can encompass a number of roles, but generally are business development or subject matter experts who can provide insight, logic, and reason as to what the projects are actually trying to solve.</p>
-         </div>
-         <div class="tab-pane" id="students">
-           <p>The first part to getting involved is showing up! This hackathon is not limited to "professionals" by any means. Whether you're an expert in NodeJS or blockchain - or just trying to apply those C++ courses into a practical project - this event will provide you with invaluable experience.<br><br>*You must be 18+ to participate.</p>
-         </div>
-       </div>
-       <br>
      </div>
    </div>
+
+   <div class="section">
+     <div class="container text-center">
+      <div class="features">
+       <h2 class="title text-center">What's in it for me?</h2>
+       <div class="row">
+        <div class="col-md-4">
+          {%- include components/card.html
+            title="Cash Prizes"
+            iconStatus="icon-success"
+            iconType="attach_money"
+            content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
+            -%}
+          </div>
+          <div class="col-md-4">
+            {%- include components/card.html
+              title="Swag"
+              iconStatus="icon-info"
+              iconType="card_giftcard"
+              content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
+              -%}
+            </div>
+            <div class="col-md-4">
+              {%- include components/card.html
+                title="Experience"
+                iconStatus="icon-danger"
+                iconType="thumb_up"
+                content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
+                -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-tabs">
+        <div class="container">
+          <h2 class="title text-center">Frequently Asked Questions</h2>
+          <div class="row">
+           <div class="col-md-6 mb-3">
+            <div class="card p-3 m-0">
+             <h4 class="card-title">What is Hack NTX?</h4>
+             <p>Hack NTX is a hackathon where participants work together with city representatives to develop prototypes (or full applications) or validate civic problems that can be addressed through technology.</p>
+           </div>
+         </div>
+         <div class="col-md-6 mb-3">
+          <div class="card p-3 m-0">
+           <h4 class="card-title">What’s a hackathon?</h4>
+           <p>A hackathon is a creative marathon all about building cool things. Participants listen to organizations present their problems, form teams, and then build out that idea into a product in 24 hours. We take these civic issues and smart city concepts and combine it with technology to make something impactful. It's a great time to push the envelope and learn some new skills.</p>
+         </div>
+       </div>
+       <div class="col-md-6 mb-3">
+        <div class="card p-3 m-0">
+         <h4 class="card-title">Does it cost money?</h4>
+         <p>Technically, yes. We're charging $10 entry to participants to help solidify the number of attendees who show up (this helps us plan better for food, snacks, and space), and helps us secure swag and materials.</p>
+       </div>
+     </div>
+     <div class="col-md-6 mb-3">
+      <div class="card p-3 m-0">
+       <h4 class="card-title">Timing</h4>
+       <p>Participants will arrive between 6PM and 7PM on Friday, November 30, 2018. We'll have dinner, do some networking, and start the project pitches. Hacking starts Friday evening after opening ceremony. Closing ceremony will begin at 7pm on Saturday, December 1, 2018.</p>
+     </div>
+   </div>
+   <div class="col-md-6 mb-3">
+    <div class="card p-3 m-0">
+     <h4 class="card-title">Location</h4>
+     <p>Our original location was going to be in Denton at Stoke, but we are currently moving the event closer towards DFW for wider audience access. Some options being considered are Frisco, Dallas, and Irving. We are working to update this as soon as possible.</p>
+   </div>
+ </div>
+ <div class="col-md-6 mb-3">
+  <div class="card p-3 m-0">
+   <h4 class="card-title">What if I have no experience or ideas?</h4>
+   <p>Don't be afraid if you don't think you have enough experience or a team - everyone has a first hackathon! Mentors who are well-versed in a variety of topics will also be there to help you, whether it be finding a team, fleshing out solutions, or just figuring out where to begin.</p>
+ </div>
+</div>
+<div class="col-md-6 mb-3">
+  <div class="card p-3 m-0">
+   <h4 class="card-title">What should I bring?</h4>
+   <p>All you need is yourself, your tech setup (laptop, charger, headphones, etc), and a great attitude - we'll provide the rest!</p>
+ </div>
+</div>
+<div class="col-md-6 mb-3">
+  <div class="card p-3 m-0">
+   <h4 class="card-title">How else can I get involved?</h4>
+   <p>We'd love to get you on our volunteering or mentoring teams! If you'd like to help, <a href="mailto:sponsor@techmill.co?subject=Hack NTX | Volunteer">send us an email</a>!. Also, be sure to follow us on <a href="https://facebook.com/techmilldenton" title="TechMill on Facebok">Facebook</a> and <a href="https://twitter.com/techmilldenton" title="TechMill on Twitter">Twitter</a> for updates!</p>
+ </div>
+</div>
+<div class="col-md-6 mb-3">
+  <div class="card p-3 m-0">
+   <h4 class="card-title">Guidelines</h4>
+   <p>Don't bring any firearms, knives, weapons, drugs, or alcohol. Don't use an old project - start a new trail instead! Also, please read our <a href="/conduct" title="Code of Conduct">Code of Conduct</a> and <a href="/conduct" title="Rules">Rules</a>. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody (TL;DR be nice).</p>
+ </div>
+</div>
+<div class="col-md-6 mb-3">
+  <div class="card p-3 m-0">
+   <h4 class="card-title">Other Questions?</h4>
+   <p>Send us an email at <a href="mailto:sponsor@techmill.co?subject=Hack NTX | questions">sponsor@techmill.co</a>, or message us on <a href="https://facebook.com/techmilldenton" title="TechMill on Facebok">Facebook</a>!</p>
  </div>
 </div>
 </div>
 </div>
-<div class="section section-tabs">
- <div class="container text-center">
-  <div class="features">
-   <h2 class="title text-center">What's in it for me?</h2>
-   <div class="row">
-    <div class="col-md-4">
-      {%- include components/card.html
-        title="Cash Prizes"
-        iconStatus="icon-success"
-        iconType="attach_money"
-        content="While this is currently dependent upon the number of sponsors we get, the top 3 teams will be walking away with cold hard cash."
-        -%}
-      </div>
-      <div class="col-md-4">
-        {%- include components/card.html
-          title="Swag"
-          iconStatus="icon-info"
-          iconType="card_giftcard"
-          content="Because you can't attend a tech event without leaving with a stack of laptop stickers, maybe some socks, and that sweet t-shirt."
-          -%}
-        </div>
-        <div class="col-md-4">
-          {%- include components/card.html
-            title="Experience"
-            iconStatus="icon-danger"
-            iconType="thumb_up"
-            content="Take the opportunity to mingle with peers, network with like minded individuals, and try something you never have before."
-            -%}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+</div>
+<div class="section">
   <div class="container">
-   <div class="section section-contacts">
+    <h2 class="title text-center">Sponsors</h2>
+      {%- include sponsor-grid.html -%}
+  </div>
+</div>
+<div class="container">
+  <hr>
+</div>
+<div class="container">
+  <div class="section section-contacts">
     <div class="row">
       <div class="col-md-5 offset-md-1 ml-auto mr-auto">
        <h4 class="description">Are you a city who needs a prototype?</h4>
@@ -205,5 +281,5 @@ layout: home
        </div>
      </div>
    </div>
- </div>
+  </div>
 </div>

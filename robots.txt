@@ -3,3 +3,8 @@
 
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
+
+# Block files ending in .json
+Disallow: /*.json$
+# Block all URLs that contain a question mark
+Disallow: /*?
