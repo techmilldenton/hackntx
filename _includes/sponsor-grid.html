@@ -1,55 +1,51 @@
-<div class="section">
-  <h2 class="title text-center">Our Sponsors</h2>
-    <div class="container">
-      <div class="sponsors">
-        <div class="smart-city--sponsor-grid">
 
-          {%- for tier in site.data.sponsors.smart_city_tier -%}
+<div class="sponsors">
+  <div class="smart-city--sponsor-grid">
 
-          <a class="tier-item" href="{{ tier.url }}" target="_blank">
-            <h5>Smart City</h5>
-            <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-          </a>
-          {%- endfor -%}
-        </div>
+    {%- for tier in site.data.sponsors.smart_city_tier -%}
 
-        <div class="city-planner--sponsor-grid sponsor-grid">
+    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+      <h5>Smart City</h5>
+      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+    </a>
+    {%- endfor -%}
+  </div>
 
-          {%- for tier in site.data.sponsors.city_planner_tier -%}
+  <div class="city-planner--sponsor-grid sponsor-grid">
 
-          <a class="tier-item" href="{{ tier.url }}" target="_blank">
-            <h5>City Planner</h5>
-            <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-          </a>
-          {%- endfor -%}
-        </div>
+    {%- for tier in site.data.sponsors.city_planner_tier -%}
 
-        <div class="civic-duty--sponsor-grid">
+    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+      <h5>City Planner</h5>
+      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+    </a>
+    {%- endfor -%}
+  </div>
 
-            {%- for tier in site.data.sponsors.city_planner_tier -%}
+  <div class="civic-duty--sponsor-grid">
 
-            <a class="tier-item" href="{{ tier.url }}" target="_blank">
-              <h5>Civic Duty</h5>
-              <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-            </a>
-            {%- endfor -%}
-          </div>
+    {%- for tier in site.data.sponsors.city_planner_tier -%}
 
-        <div class="community--sponsor-grid">
+    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+      <h5>Civic Duty</h5>
+      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+    </a>
+    {%- endfor -%}
+  </div>
 
-            {%- for tier in site.data.sponsors.community_tier -%}
+  <div class="community--sponsor-grid">
 
-            <a class="tier-item" href="{{ tier.url }}" target="_blank">
-              <h5>Community</h5>
-              <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-            </a>
-            {%- endfor -%}
-        </div>
+    {%- for tier in site.data.sponsors.community_tier -%}
 
-      </div>
+    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+      <h5>Community</h5>
+      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+    </a>
+    {%- endfor -%}
+  </div>
 
-      <div class="text-center">
-        <a href="/sponsors/" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
-      </div>
+</div>
 
-    </div>
+<div class="text-center">
+  <a href="/sponsors/" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
+</div>
