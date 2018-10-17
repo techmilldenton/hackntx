@@ -43,7 +43,6 @@ sass:
 
 # SEO
 google_analytics: UA-51689839-6
-google_site_verification: "xW65Fgg3mTD7sB8nPaGzLkVZz_qzP1RL9cajpbVaSS0"
 
 author: techmilldenton
 twitter:
@@ -63,7 +62,7 @@ defaults:
       path: ""
     values:
       image:
-        path: assets/img/twitter-In-Stream_Wide___hackntx-social.jpg
+        path: assets/img/social/twitter-In-Stream_Wide___hackntx-social.jpg
         height: 640
         width: 1280
 
