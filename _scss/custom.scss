@@ -94,3 +94,17 @@
 		background-image: -o-linear-gradient(left, #37E091, $accent);
 	}
 }
+
+.card-contact {
+	.submit-success {
+		display: none;
+		opacity: 0;
+		transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+		&.fade-in {
+			display: block;
+			opacity: 1;
+		}
+	}
+}

@@ -16,19 +16,20 @@ $(document).ready(function(){
     	return ( prop && prop in params ) ? params[ prop ] : null;
     };
 
-    // Show thank you on form submission.
-    if (getUrlParam("thankyou") !== null) {
-    	var thankYouContact = `<div class="alert alert-success">
-    	<div class="container">
-    	<div class="alert-icon">
-    	<i class="material-icons">check</i>
-    	</div>
-    	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    	<span aria-hidden="true"><i class="material-icons">clear</i></span>
-    	</button>
-    	<b>Success:</b> Thank you for your email! We'll get back to you shortly.
-    	</div>
-    	</div>`;
-    	$("main.main").prepend(thankYouContact);
-    }
+    // submit contact form with ajax
+    $('#contact-form').submit(function(e) {
+      e.preventDefault();
+      var actionUrl = '//formspree.io/sffitzpatrick@gmail.com'
+      $.ajax({
+        method: 'POST',
+        url: actionUrl,
+        data: $('#contact-form').serialize(),
+        datatype: 'json',
+        success: function() {
+          $('.submit-success').addClass('fade-in');
+        }
+      });
+      $(this).get(0).reset();
+    });
+
 });

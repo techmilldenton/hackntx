@@ -11,11 +11,22 @@ permalink: /contact
 	</div>
 	<div class="col-md-5 ml-auto">
 		<div class="card card-contact">
-			<form class="form" action="https://formspree.io/sponsor@techmill.co" method="POST">
+			<form class="form" id="contact-form">
 				<div class="card-header card-header-raised card-header-success text-center">
 					<h4 class="card-title">Contact Us</h4>
 				</div>
 				<div class="card-body">
+					<div class="alert alert-success submit-success">
+						<div class="container">
+							<div class="alert-icon">
+								<i class="material-icons">check</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+							<b>Success:</b> Thank you for your email! We'll get back to you shortly.
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group label-floating is-empty bmd-form-group">
