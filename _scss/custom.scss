@@ -93,12 +93,16 @@
 
 @mixin sponsor-grid-tier($width) {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;	
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 
-	.tier-item { 
-		margin: 1.8rem;
-		max-width: $width;
+	.tier-item {
+    margin: 1.8rem;
+    background-color: white;
+    max-width: $width;
+    border-radius: 6px;
+    padding: 0.5rem;
 		transition: 0.3s ease-in-out;
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 	}
@@ -107,12 +111,12 @@
 		transform: translateY(-10px);
 	}
 
-	img { 
+	img {
 		width: 100%;
 		border-bottom-left-radius: 6px;
 		border-bottom-right-radius: 6px;
 	}
-	
+
 
 	h5 {
 		background-color: white;
@@ -129,10 +133,11 @@
 .sponsors {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;	
+			justify-content: center;
 
 	.smart-city--sponsor-grid { @include sponsor-grid-tier(320px); }
 	.city-planner--sponsor-grid { @include sponsor-grid-tier(160px); }
-	.civic-duty--sponsor-grid { @include sponsor-grid-tier(100px); }
+  .civic-duty--sponsor-grid { @include sponsor-grid-tier(140px); }
+  .community--sponsor-grid { @include sponsor-grid-tier(120px); }
 
 }

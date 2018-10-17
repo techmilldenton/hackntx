@@ -4,9 +4,10 @@
 #  url: Sponsor's site url
 
 smart_city_tier:
-  - name: "TechMill"
+  - name: TechMill
     url: https://techmill.co/
     img: /assets/img/sponsors/techmillco.jpeg
+
 city_planner_tier:
   - name: Open Denton
     url: https://www.opendenton.com/
@@ -14,16 +15,28 @@ city_planner_tier:
   - name: Open Denton
     url: https://www.opendenton.com/
     img: /assets/img/sponsors/opendenton.jpg
-  - name: "TechMill"
+  - name: TechMill
     url: https://techmill.co/
     img: /assets/img/sponsors/techmillco.jpeg
   - name: Open Denton
     url: https://www.opendenton.com/
     img: /assets/img/sponsors/stoke.png
+
 civic_duties_tier:
-    - name: Open Denton
-      url: https://www.opendenton.com/
-      img: /assets/img/sponsors/opendenton.jpg
-    - name: Open Denton
-      url: https://www.opendenton.com/
-      img: /assets/img/sponsors/opendenton.jpg
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/opendenton.jpg
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/opendenton.jpg
+
+community_tier:
+  - name: TechMill
+    url: https://techmill.co/
+    img: /assets/img/sponsors/techmillco.jpeg
+  - name: Open Denton
+    url: https://www.opendenton.com/
+    img: /assets/img/sponsors/opendenton.jpg
+  - name: Stoke
+    url: https://stokedenton.com/
+    img: /assets/img/sponsors/stoke.png

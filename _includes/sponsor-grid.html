@@ -1,5 +1,5 @@
-<div class="section section-tabs">
-  <h2 class="title text-center">Our Sponsors</h1>
+<div class="section">
+  <h2 class="title text-center">Our Sponsors</h2>
     <div class="container">
       <div class="sponsors">
         <div class="smart-city--sponsor-grid">
@@ -27,20 +27,29 @@
         <div class="civic-duty--sponsor-grid">
 
             {%- for tier in site.data.sponsors.city_planner_tier -%}
-  
+
             <a class="tier-item" href="{{ tier.url }}" target="_blank">
               <h5>Civic Duty</h5>
               <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
             </a>
             {%- endfor -%}
           </div>
-        
+
+        <div class="community--sponsor-grid">
+
+            {%- for tier in site.data.sponsors.community_tier -%}
+
+            <a class="tier-item" href="{{ tier.url }}" target="_blank">
+              <h5>Community</h5>
+              <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+            </a>
+            {%- endfor -%}
+        </div>
+
       </div>
-      
+
       <div class="text-center">
         <a href="/sponsors/" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
       </div>
-    
-    </div>
 
-<!-- </div> -->
+    </div>
