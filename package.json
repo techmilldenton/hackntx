@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp compile:scss",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
