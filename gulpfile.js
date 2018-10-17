@@ -1,9 +1,9 @@
-var gulp         = require('gulp');
-var sass         = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps   = require('gulp-sourcemaps');
-var shell        = require('gulp-shell');
-var browserSync  = require('browser-sync').create();
+const gulp         = require('gulp');
+const sass         = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps   = require('gulp-sourcemaps');
+const browserSync  = require('browser-sync').create();
+const { exec }     = require('child_process');
 
 var Paths = {
   HERE                 : './',
@@ -32,12 +32,18 @@ gulp.task('build', gulp.series('compile:scss', function(done) {
   done();
 }));
 
+gulp.task('jekyll:serve', gulp.series(function(done){
+  exec('jekyll serve', (err, stdout, stderr) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(stdout);
+  });
+}));
+
 // Task for building blog when something changed:
-gulp.task('jekyll', gulp.series(shell.task(['jekyll serve']), 'compile:scss'));
-// If you don't use bundle:
-// gulp.task('build', shell.task(['jekyll serve']));
-// If you use  Windows Subsystem for Linux (thanks @SamuliAlajarvela):
-// gulp.task('build', shell.task(['bundle exec jekyll serve --force_polling']));
+gulp.task('jekyll', gulp.series('jekyll:serve', 'compile:scss'));
 
 // Task for serving blog with Browsersync
 gulp.task('serve', gulp.series(function (done) {
