@@ -1,3 +1,4 @@
 ---
+# Required for Jekyll processing
 ---
 {{ site.data.notifications | jsonify }}
