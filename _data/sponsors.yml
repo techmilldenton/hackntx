@@ -2,6 +2,7 @@
 # -name: Sponsor name
 #  img: img url
 #  url: Sponsor's site url
+#  social_links: Sponsor's respective social media links where names match FA icon classes. Max 5/sponsor
 
 smart_city_tier:
 
@@ -14,9 +15,34 @@ community_tier:
   - name: TechMill
     url: https://techmill.co/
     img: /assets/img/sponsors/techmillco.jpeg
+    social_links:
+      - name: facebook
+        url: https://www.facebook.com/techmilldenton
+      - name: twitter
+        url: https://twitter.com/techmilldenton
+      - name: linkedin
+        url: https://www.linkedin.com/company/techmill-llc
+      - name: github
+        url: https://github.com/techmilldenton
   - name: Open Denton
     url: https://www.opendenton.com/
     img: /assets/img/sponsors/opendenton.jpg
+    social_links:
+      - name: facebook
+        url: https://facebook.com/opendenton
+      - name: twitter
+        url: https://twitter.com/opendenton
+      - name: github
+        url: https://github.com/opendenton
   - name: Stoke
     url: https://stokedenton.com/
     img: /assets/img/sponsors/stoke.png
+    social_links:
+      - name: facebook
+        url: https://facebook.com/stokedenton
+      - name: twitter
+        url: https://twitter.com/stokedenton
+      - name: linkedin
+        url: https://linkedin.com/company/stokedenton
+      - name: instagram
+        url: https://instagram.com/stokedenton
