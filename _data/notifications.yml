@@ -3,6 +3,6 @@ paypal:
   message: "Thank you for your contribution!"
   severity: success
 thankyou:
- type: modal
- title: Modal Title Test
- message: "Thank you for your email! We'll get back to you shortly."
+  type: modal
+  title: Modal Title Test
+  message: "Thank you for your email! We'll get back to you shortly."
