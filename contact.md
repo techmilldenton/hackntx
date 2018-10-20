@@ -45,7 +45,7 @@ permalink: /contact
 				</div>
 				<div class="card-footer justify-content-between">
 					<input type="text" name="_gotcha" style="display:none" class="form-control">
-					<input type="hidden" name="_next" value="//hackntx.com/?thankyou=1">
+					<input type="hidden" name="_next" value="//www.hackntx.com/?notification=contact_success">
 					<button type="submit" class="btn btn-success pull-right">Send Message</button>
 				</div>
 			</form>

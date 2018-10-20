@@ -16,6 +16,7 @@ This is a static site hosted on Github Pages using the Jekyll static site genera
    npm install -D
 ```
 - Run Jekyll: `jekyll serve`
+   - If this doesn't work, you can try `bundle exec jekyll serve`
 
 ## Conflicts
 Sometimes when running into gem version conflicts, these can be remedied by cleaning up the gems and re-installing them.

@@ -3,22 +3,38 @@
   <div class="smart-city--sponsor-grid">
 
     {%- for tier in site.data.sponsors.smart_city_tier -%}
-
-    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+    <div class="tier-item">
       <h5>Smart City</h5>
-      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-    </a>
+      <div class="sponsor-logo">
+        <a href="{{ tier.url }}" target="_blank">
+          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+        </a>
+      </div>
+      <div class="sponsor-bottom">
+        {%- for social_link in tier.social_links -%}
+          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+        {%- endfor -%}
+      </div>
+    </div>
     {%- endfor -%}
   </div>
 
   <div class="city-planner--sponsor-grid sponsor-grid">
 
     {%- for tier in site.data.sponsors.city_planner_tier -%}
-
-    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+    <div class="tier-item">
       <h5>City Planner</h5>
-      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-    </a>
+      <div class="sponsor-logo">
+        <a href="{{ tier.url }}" target="_blank">
+          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+        </a>
+      </div>
+      <div class="sponsor-bottom">
+        {%- for social_link in tier.social_links -%}
+          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+        {%- endfor -%}
+      </div>
+    </div>
     {%- endfor -%}
   </div>
 
@@ -26,10 +42,19 @@
 
     {%- for tier in site.data.sponsors.city_planner_tier -%}
 
-    <a class="tier-item" href="{{ tier.url }}" target="_blank">
-      <h5>Civic Duty</h5>
-      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-    </a>
+    <div class="tier-item">
+      <h5>Civiv Duty</h5>
+      <div class="sponsor-logo">
+        <a href="{{ tier.url }}" target="_blank">
+          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+        </a>
+      </div>
+      <div class="sponsor-bottom">
+        {%- for social_link in tier.social_links -%}
+          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+        {%- endfor -%}
+      </div>
+    </div>
     {%- endfor -%}
   </div>
 
@@ -37,15 +62,24 @@
 
     {%- for tier in site.data.sponsors.community_tier -%}
 
-    <a class="tier-item" href="{{ tier.url }}" target="_blank">
+    <div class="tier-item">
       <h5>Community</h5>
-      <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-    </a>
+      <div class="sponsor-logo">
+        <a href="{{ tier.url }}" target="_blank">
+          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
+        </a>
+      </div>
+      <div class="sponsor-bottom">
+        {%- for social_link in tier.social_links -%}
+          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+        {%- endfor -%}
+      </div>
+    </div>
     {%- endfor -%}
   </div>
 
 </div>
 
 <div class="text-center">
-  <a href="/sponsors/" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
+  <a href="/sponsors" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
 </div>
