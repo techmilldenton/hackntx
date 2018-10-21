@@ -119,16 +119,16 @@
 
 .sponsors {
 	text-align: center;
-	&--smart-city {
+	&__smart-city {
 		@include sponsor-grid-tier(320px);
 	}
-	&--city-planner {
+	&__city-planner {
 		@include sponsor-grid-tier(160px);
 	}
-  &--civic-duty {
+  &__civic-duty {
 		@include sponsor-grid-tier(140px);
 	}
-  &--community {
+  &__community {
 		@include sponsor-grid-tier(120px);
 	}
   .sponsor-logo {

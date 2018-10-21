@@ -2,7 +2,7 @@
 <div class="sponsors">
   {% if site.data.sponsors.smart_city_tier %}
     <h3>Smart City</h3>
-    <div class="sponsors--smart-city">
+    <div class="sponsors__smart-city">
       {%- for tier in site.data.sponsors.smart_city_tier -%}
         {% include sponsor.html
                    name=sponsor.name
@@ -15,7 +15,7 @@
   {% endif %}
   {% if site.data.sponsors.city_planner_tier %}
     <h3>City Planner</h3>
-    <div class="sponsors--city-planner">
+    <div class="sponsors__city-planner">
       {%- for tier in site.data.sponsors.city_planner_tier -%}
         {% include sponsor.html
                    name=sponsor.name
@@ -28,7 +28,7 @@
   {% endif %}
   {% if site.data.sponsors.civic_duties_tier %}
     <h3>Civiv Duty</h3>
-    <div class="sponsors--civic-duty">
+    <div class="sponsors__civic-duty">
       {%- for tier in site.data.sponsors.city_planner_tier -%}
         {% include sponsor.html
                    name=sponsor.name
@@ -41,7 +41,7 @@
   {% endif %}
   {% if site.data.sponsors.community_tier %}
     <h3>Community</h3>
-    <div class="sponsors--community">
+    <div class="sponsors__community">
       {%- for sponsor in site.data.sponsors.community_tier -%}
         {% include sponsor.html
                    name=sponsor.name
