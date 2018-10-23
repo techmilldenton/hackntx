@@ -1,57 +1,20 @@
 
 <div class="sponsors">
-  {% if site.data.sponsors.smart_city_tier %}
-    <h3>Smart City</h3>
-    <div class="sponsors__smart-city">
-      {%- for tier in site.data.sponsors.smart_city_tier -%}
-        {% include sponsor.html
-                   name=sponsor.name
-                   url=sponsor.url
-                   img=sponsor.img
-                   social_links=sponsor.social_links
-        %}
-      {%- endfor -%}
-    </div>
-  {% endif %}
-  {% if site.data.sponsors.city_planner_tier %}
-    <h3>City Planner</h3>
-    <div class="sponsors__city-planner">
-      {%- for tier in site.data.sponsors.city_planner_tier -%}
-        {% include sponsor.html
-                   name=sponsor.name
-                   url=sponsor.url
-                   img=sponsor.img
-                   social_links=sponsor.social_links
-        %}
-      {%- endfor -%}
-    </div>
-  {% endif %}
-  {% if site.data.sponsors.civic_duties_tier %}
-    <h3>Civiv Duty</h3>
-    <div class="sponsors__civic-duty">
-      {%- for tier in site.data.sponsors.city_planner_tier -%}
-        {% include sponsor.html
-                   name=sponsor.name
-                   url=sponsor.url
-                   img=sponsor.img
-                   social_links=sponsor.social_links
-        %}
-      {%- endfor -%}
-    </div>
-  {% endif %}
-  {% if site.data.sponsors.community_tier %}
-    <h3>Community</h3>
-    <div class="sponsors__community">
-      {%- for sponsor in site.data.sponsors.community_tier -%}
-        {% include sponsor.html
-                   name=sponsor.name
-                   url=sponsor.url
-                   img=sponsor.img
-                   social_links=sponsor.social_links
-        %}
-      {%- endfor -%}
-    </div>
-  {% endif %}
+  {%- for tier in site.data.sponsors -%}
+    {% if tier.items %}
+      <h3>{{ tier.name }}</h3>
+      <div class="sponsors__{{ tier.name | slugify }}">
+        {%- for sponsor in tier.items -%}
+          {% include sponsor.html
+                     name=sponsor.name
+                     url=sponsor.url
+                     img=sponsor.img
+                     social_links=sponsor.social_links
+          %}
+        {%- endfor -%}
+      </div>
+    {% endif %}
+  {%- endfor -%}
 </div>
 
 <div class="text-center">
