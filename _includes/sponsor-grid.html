@@ -1,83 +1,20 @@
 
 <div class="sponsors">
-  <div class="smart-city--sponsor-grid">
-
-    {%- for tier in site.data.sponsors.smart_city_tier -%}
-    <div class="tier-item">
-      <h5>Smart City</h5>
-      <div class="sponsor-logo">
-        <a href="{{ tier.url }}" target="_blank">
-          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-        </a>
-      </div>
-      <div class="sponsor-bottom">
-        {%- for social_link in tier.social_links -%}
-          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+  {%- for tier in site.data.sponsors -%}
+    {% if tier.items %}
+      <h3>{{ tier.name }}</h3>
+      <div class="sponsors__{{ tier.name | slugify }}">
+        {%- for sponsor in tier.items -%}
+          {% include sponsor.html
+                     name=sponsor.name
+                     url=sponsor.url
+                     img=sponsor.img
+                     social_links=sponsor.social_links
+          %}
         {%- endfor -%}
       </div>
-    </div>
-    {%- endfor -%}
-  </div>
-
-  <div class="city-planner--sponsor-grid sponsor-grid">
-
-    {%- for tier in site.data.sponsors.city_planner_tier -%}
-    <div class="tier-item">
-      <h5>City Planner</h5>
-      <div class="sponsor-logo">
-        <a href="{{ tier.url }}" target="_blank">
-          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-        </a>
-      </div>
-      <div class="sponsor-bottom">
-        {%- for social_link in tier.social_links -%}
-          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
-        {%- endfor -%}
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
-
-  <div class="civic-duty--sponsor-grid">
-
-    {%- for tier in site.data.sponsors.city_planner_tier -%}
-
-    <div class="tier-item">
-      <h5>Civiv Duty</h5>
-      <div class="sponsor-logo">
-        <a href="{{ tier.url }}" target="_blank">
-          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-        </a>
-      </div>
-      <div class="sponsor-bottom">
-        {%- for social_link in tier.social_links -%}
-          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
-        {%- endfor -%}
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
-
-  <div class="community--sponsor-grid">
-
-    {%- for tier in site.data.sponsors.community_tier -%}
-
-    <div class="tier-item">
-      <h5>Community</h5>
-      <div class="sponsor-logo">
-        <a href="{{ tier.url }}" target="_blank">
-          <img src="{{ tier.img }}" alt="Sponsor - {{ tier.name }}" />
-        </a>
-      </div>
-      <div class="sponsor-bottom">
-        {%- for social_link in tier.social_links -%}
-          <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
-        {%- endfor -%}
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
-
+    {% endif %}
+  {%- endfor -%}
 </div>
 
 <div class="text-center">
