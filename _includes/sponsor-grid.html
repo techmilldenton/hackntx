@@ -2,8 +2,8 @@
 <div class="sponsors">
   {%- for tier in site.data.sponsors -%}
     {% if tier.items %}
-      <h3>{{ tier.name }}</h3>
-      <div class="sponsors__{{ tier.name | slugify }}">
+      <h3 class="tier tier__{{ tier.name | slugify }}">{{ tier.name }}</h3>
+      <div class="sponsor sponsor__{{ tier.name | slugify }}">
         {%- for sponsor in tier.items -%}
           {% include sponsor.html
                      name=sponsor.name
