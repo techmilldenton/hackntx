@@ -40,10 +40,19 @@
 }
 
 // Utility classes
-.vertical-align {
+@mixin vertical-align {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.vertical-align {
+	@include vertical-align();
+}
+
+.vertical-align-column {
+	@include vertical-align();
+	flex-direction: column;
 }
 
 .bot-left {
