@@ -176,3 +176,14 @@
 	}
 
 }
+
+.gmap-embed {
+	width: 100%;
+	max-width: 100%;
+}
+
+@media all and (max-width: 768px) {
+	.page-header {
+		padding-top: 208px;
+	}
+}
