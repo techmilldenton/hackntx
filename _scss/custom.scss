@@ -17,6 +17,10 @@
 	}
 }
 
+.lead {
+	line-height: 2rem;
+}
+
 .navbar {
 	.navbar-brand {
 		max-width: 40px;
@@ -96,65 +100,79 @@
 }
 
 @mixin sponsor-grid-tier($width) {
-	display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-
 	.tier-item {
-    margin: 1.8rem;
-    background-color: white;
-    max-width: $width;
-    border-radius: 6px;
-    padding: 0.5rem;
-		transition: 0.3s ease-in-out;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-	}
-
-	.tier-item:hover {
-		transform: translateY(-10px);
-	}
-
-	img {
-		width: 100%;
-		border-bottom-left-radius: 6px;
-		border-bottom-right-radius: 6px;
-	}
-
-
-	h5 {
-		background-color: white;
-		display: block;
-		text-align: center;
-		font-weight: 600;
-		margin: 0;
-		border-top-left-radius: 6px;
-		border-top-right-radius: 6px;
+		max-width: $width;
 	}
 }
 
-
 .sponsors {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+	text-align: center;
 
-	.smart-city--sponsor-grid { @include sponsor-grid-tier(320px); }
-	.city-planner--sponsor-grid { @include sponsor-grid-tier(160px); }
-  .civic-duty--sponsor-grid { @include sponsor-grid-tier(140px); }
-  .community--sponsor-grid { @include sponsor-grid-tier(120px); }
+	.tier {
+		padding: 1rem;
+		color: white;
+		font-weight: 500;
+		&__smart-city {
+			background-color: #37E291;
+		}
+		&__city-planner {
+			background-color: #34B999;
+		}
+		&__civic-duty {
+			background-color: #317DA7;
+		}
+		&__community {
+			background-color: #304DB3;
+		}
+	}
 
-  .sponsor-logo {
-  	min-height: 110px;
-  }
-  
-  div .tier-item div.sponsor-bottom { 
-  	vertical-align: bottom;
+	.sponsor {
 		display: flex;
-		justify-content: space-between;
-		margin-top: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
-  }
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		&__smart-city {
+			@include sponsor-grid-tier(320px);
+		}
+		&__city-planner {
+			@include sponsor-grid-tier(240px);
+		}
+		&__civic-duty {
+			@include sponsor-grid-tier(140px);
+		}
+		&__community {
+			@include sponsor-grid-tier(120px);
+		}
+	}
+
+	.tier-item {
+		margin: 1.8rem;
+		background-color: white;
+		border-radius: 6px;
+		padding: 0.5rem;
+		.sponsor-bottom {
+			margin-top: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			display: flex;
+			justify-content: center;
+			.sponsor-links {
+				display: flex;
+				justify-content: space-evenly;
+				width: 120px;
+			}
+		}
+	}
+
+	.sponsor-logo {
+		min-height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 100%;
+		    border-radius: 6px;
+		}
+	}
 
 }

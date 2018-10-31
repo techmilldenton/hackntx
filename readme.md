@@ -15,7 +15,7 @@ This is a static site hosted on Github Pages using the Jekyll static site genera
    bundle install
    npm install -D
 ```
-- Run Jekyll: `jekyll serve`
+- Run Jekyll: `jekyll serve` or `jekyll s`
    - If this doesn't work, you can try `bundle exec jekyll serve`
 
 ## Conflicts

@@ -1,0 +1,14 @@
+<div class="tier-item">
+  <div class="sponsor-logo">
+    <a href="{{ include.url }}" title="{{ include.name }}" target="_blank">
+      <img src="{{ include.img }}" alt="Sponsor - {{ include.name }}" />
+    </a>
+  </div>
+  <div class="sponsor-bottom">
+    <div class="sponsor-links">
+      {%- for social_link in include.social_links -%}
+        <a href="{{ social_link.url }}" target="_blank"><i class="fa fa-{{social_link.name}}"></i></a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
