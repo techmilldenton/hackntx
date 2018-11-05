@@ -127,7 +127,7 @@
 		&__city-planner {
 			background-color: #34B999;
 		}
-		&__civic-duty {
+		&__civic-duties {
 			background-color: #317DA7;
 		}
 		&__community {
@@ -146,7 +146,7 @@
 		&__city-planner {
 			@include sponsor-grid-tier(240px);
 		}
-		&__civic-duty {
+		&__civic-duties {
 			@include sponsor-grid-tier(140px);
 		}
 		&__community {
@@ -159,6 +159,7 @@
 		background-color: white;
 		border-radius: 6px;
 		padding: 0.5rem;
+		max-width: 20%;
 		.sponsor-bottom {
 			margin-top: 5px;
 			padding-left: 5px;

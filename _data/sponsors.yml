@@ -26,11 +26,6 @@
 - name: Civic Duties
   class: brand-warning
   items:
-
-# Community sponsors
-- name: Community
-  class: brand-default
-  items:
     - name: TechMill
       url: https://techmill.co
       img: /assets/img/sponsors/techmillco.jpeg
@@ -43,6 +38,11 @@
           url: https://www.linkedin.com/company/techmill-llc
         - name: github
           url: https://github.com/techmilldenton
+
+# Community sponsors
+- name: Community
+  class: brand-default
+  items:
     - name: Open Denton
       url: https://www.opendenton.com
       img: /assets/img/sponsors/opendenton.jpg
@@ -75,3 +75,11 @@
           url: https://twitter.com/untasist
         - name: paper-plane
           url: mailto:untasist@gmail.com
+    - name: Novam
+      url: https://novam.ai/
+      img: /assets/img/sponsors/novam.png
+      social_links:
+        - name: facebook
+          url: https://www.facebook.com/novamintl
+        - name: twitter
+          url: https://twitter.com/NOVAMIntl
