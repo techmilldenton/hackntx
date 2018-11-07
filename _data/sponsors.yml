@@ -13,14 +13,6 @@
 - name: City Planner
   class: brand-info
   items:
-    - name: UNT Inspire Park
-      url: https://frisco.unt.edu/location/inspire-park
-      img: /assets/img/sponsors/Inspire_Park_green.png
-      social_links:
-        - name: facebook
-          url: https://www.facebook.com/UNTNewCollegeFrisco
-        - name: twitter
-          url: https://twitter.com/UNTFrisco
 
 # Civic Duties sponsors
 - name: Civic Duties
