@@ -4,7 +4,7 @@ layout: default
 permalink: /conduct
 ---
 
-### By purchasing a ticket to a HackNTX event you agree to the following.
+### By registering for HackNTX event you agree to the following.
 
 
 
@@ -57,3 +57,7 @@ Hackathon staff will be happy to help participants contact any local security or
 If a participant engages in harassing behavior, the hackathon organizers may take any action they deem appropriate. This includes warning the offender, expulsion from the hackathon with no refund (if applicable), or reporting their behavior to local law enforcement.
 
 We expect participants to follow these rules at hackathon and workshop venues and hackathon-related social events.
+
+<hr>
+
+As an MLH associated event, you also agree to the Code of Conduct provided by Major League Hacking, which can be found here: <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>
