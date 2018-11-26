@@ -11,7 +11,7 @@ permalink: /sponsors
 			<br><br>
 			This event is a first of it's kind for our organization and our community. Since the founding of TechMill, we have had a long history of creating and supporting tech and smart city initiatives in our home city of Denton. Whether it was open data, government transparency, or civic engagement - we've always had a soft spot for civic technology.
 			<br><br>
-			For 2018, a successful event means curating a list of projects with attainable, productive outcomes within a 24 hour window, and providing the top teams (as chosen by the judges) with cash prizes. We want everyone to have a great time, become more aware of the smart city initiatives around North Texas, and provide the organizations with projects with validation or prototype of their innovative ideas.
+			For 2018, a successful event means curating a list of projects with attainable, productive outcomes within a day, and providing the top teams (as chosen by the judges) with cash prizes. We want everyone to have a great time, become more aware of the smart city initiatives around North Texas, and provide the organizations with projects with validation or prototype of their innovative ideas.
 			<br><br>
 			<h3 class="title text-center" id="corporate-sponsor">Corporate Sponsor?</h3>
 			We need <strong style="font-weight: bold;">YOU!</strong> This event could not be held without contributions from organizations like you. TechMill is a volunteer led, registed 501(c)(3) nonprofit who has been organizing startup and tech events since 2014 - Startup Weekend, Open Data Day, Bootstrap Denton, and a long list of hands-on educational workshops. Any excess donations that exceed our event expense budget is reinvested back into these community initiatives.
