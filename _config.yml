@@ -61,10 +61,17 @@ defaults:
   - scope:
       path: ""
     values:
+      layout: "page"
       image:
         path: assets/img/social/twitter-In-Stream_Wide___hackntx-social.jpg
         height: 640
         width: 1280
+  - scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+      category: "Default"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

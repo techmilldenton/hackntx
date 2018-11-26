@@ -2,7 +2,7 @@
 layout: page
 title: "Judging Criteria"
 permalink: /judging-criteria
-img: assets/img/panel.jpg
+img: /assets/img/panel.jpg
 ---
 
 ## Demos

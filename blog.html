@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Blog"
+permalink: /blog
+img: assets/img/panel.jpg
+---
+
+<div class="section">
+	<div class="row">
+		{%- for post in site.posts -%}
+		{% assign loopindex = forloop.index | modulo: 3 %}
+		{%- capture post_class -%}{% if loopindex == 0 %}12{%- else -%}6{%- endif -%}{%- endcapture -%}
+		{%- assign img_path = "/assets/img/bg9.jpg" -%}{%- if post.img -%}{% assign img_path = post.img %}{%- endif -%}
+		<div class="col-md-{{ post_class }}">
+			<div class="card card-raised card-background" style="background-image: url('{{ img_path }}')">
+				<div class="card-body">
+					<h6 class="card-category text-info">{{ post.date | date_to_string }}</h6>
+					<a href="#{{ post.id | slugify }}">
+						<h3 class="card-title">{{ post.title }}</h3>
+					</a>
+					<p class="card-description">{{ post.excerpt | strip_html }}</p>
+					<a href="{{ post.url }}" class="btn btn-success btn-round">
+						<i class="material-icons">format_align_left</i> Read Post
+					</a>
+				</div>
+			</div>
+		</div>
+		{%- endfor -%}
+	</div>
+</div>
+
+{%- if site.posts.size > 0 -%}
+<h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+<ul class="post-list">
+	{%- for post in site.posts -%}
+	{{ page.is_post }}
+	<li>
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		<span class="post-meta">{{ post.date | date: date_format }}</span>
+		<h3>
+			<a class="post-link" href="{{ post.url | relative_url }}">
+				{{ post.title | escape }}
+			</a>
+		</h3>
+		{%- if site.show_excerpts -%}
+		{{ post.excerpt }}
+		{%- endif -%}
+	</li>
+	{%- endfor -%}
+</ul>
+<p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
+{%- endif -%}

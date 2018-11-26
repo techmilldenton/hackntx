@@ -1,4 +1,4 @@
-{%- assign img_path = "assets/img/bg9.jpg" -%}
+{%- assign img_path = "/assets/img/bg9.jpg" -%}
 {%- if page.img -%}
 	{% assign img_path = page.img %}
 {%- endif -%}
@@ -9,7 +9,7 @@
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h1 class="title">{{ page.title }}</h1>
                     {%- if page.description -%}
-                    <h4>{{ page.description }}</h4>
+                        <h4>{{ page.description }}</h4>
                     {%- endif -%}
                 </div>
             </div>

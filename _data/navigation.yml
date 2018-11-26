@@ -20,6 +20,8 @@ toc:
     url: /sponsors
   - title: Contact
     url: /contact
+  - title: Blog
+    url: /blog
   - title: Register
     url: https://localhackday.mlh.io/lhd-2018/events/909-techmill-inc
     class: "btn btn-success"
