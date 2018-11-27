@@ -57,6 +57,7 @@ social:
       - https://www.linkedin.com/company/techmill-llc
       - https://github.com/techmilldenton
 
+# Jekyll defaults
 defaults:
   - scope:
       path: ""

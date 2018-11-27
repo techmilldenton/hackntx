@@ -28,7 +28,31 @@
 }
 
 .not-front .main {
-	padding: 1em 0;
+	padding: 1em 3em;
+}
+.main-raised {
+	margin: -60px 6em 0px;
+	.container {
+		padding-right: 1.5em;
+		padding-left: 1.5em;
+	}
+}
+
+.form-group.select {
+	position: relative;
+	display: inline-block;
+	&::after {
+		right: 5px;
+		top: 14px;
+		font-size: 25px;
+		position: absolute;
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		content: "\e5c5";
+		pointer-events: none;
+		color: #fff;
+	}
 }
 
 .navbar-nav .nav-item .nav-link.btn-success {
@@ -181,7 +205,7 @@
 		justify-content: center;
 		img {
 			width: 100%;
-		    border-radius: 6px;
+			border-radius: 6px;
 		}
 	}
 

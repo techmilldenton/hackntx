@@ -1,5 +1,8 @@
+---
+# Use for Jekyll processing
+layout: clean
+---
 // Custom.js file for rest of site.
-
 function getUrlParam ( prop ) {
   var params = {};
   var search = decodeURIComponent( window.location.href.slice( window.location.href.indexOf( '?' ) + 1 ) );
@@ -76,6 +79,23 @@ function parseNotifications() {
   }
 }
 
+// Serialize form into JSON object
+jQuery.fn.serializeFormJSON = function () {
+  var o = {};
+  var a = this.serializeArray();
+  jQuery.each(a, function () {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+    } else {
+      o[this.name] = this.value || '';
+    }
+  });
+  return o;
+};
+
 (function($){
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
@@ -84,5 +104,9 @@ function parseNotifications() {
     // Parse URL params for notifications.
     parseNotifications();
 
+    var $challengeForm = $("#challenge-form");
+    $("input#timestamp", $challengeForm).val(Date.now());
+    $challengeForm.attr("sheetsu-after-submit", window.location.href +"?notifcation=challenge");
+
   });
-})(jQuery)
+})(jQuery);
