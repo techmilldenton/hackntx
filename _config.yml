@@ -64,7 +64,7 @@ defaults:
     values:
       layout: "page"
       image:
-        path: assets/img/social/twitter-In-Stream_Wide___hackntx-social.jpg
+        path: assets/img/social/facebook-Linked_Image___hackntx-social.jpg
         height: 640
         width: 1280
   - scope:
