@@ -17,10 +17,22 @@ var Paths = {
   JS                   : './assets/js/custom.js',
 };
 
+var errorHandler = function(error) {
+    notify.onError({
+        title: 'Task Failed [' + error.plugin + ']',
+        message: 'Oops, something went wrong!',
+        sound: true
+    })(error);
+
+    // Prevent gulp watch from stopping
+    this.emit('end');
+};
+
 gulp.task('compile:scss', gulp.series(function(done) {
   gulp.src(Paths.SCSS, { allowEmpty: true })
   .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass())
+  .on('error', errorHandler)
   .pipe(autoprefixer())
   .pipe(sourcemaps.write(Paths.HERE))
   .pipe(gulp.dest(Paths.DIST+"css/"));
@@ -33,6 +45,7 @@ gulp.task('compile:js', gulp.series(function(done) {
   .pipe(babel({
     "plugins": ["transform-es2015-template-literals"]
   }))
+  .on('error', errorHandler)
   .pipe(minify())
   .pipe(gulp.dest(Paths.DIST+"js/"));
   done();
