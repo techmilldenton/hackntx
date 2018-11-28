@@ -164,7 +164,7 @@ jQuery.fn.serializeFormJSON = function () {
         </div>
       `;
 
-      fetch('https://sheetsu.com/apis/v1.0su/6167299f6e6e')
+      fetch('https://sheetsu.com/apis/v1.0bu/6167299f6e6e')
       .then(res => res.json())
       .then(json => {
 
