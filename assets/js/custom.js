@@ -1,7 +1,3 @@
----
-# Use for Jekyll processing
-layout: clean
----
 // Custom.js file for rest of site.
 function getUrlParam ( prop ) {
   var params = {};
