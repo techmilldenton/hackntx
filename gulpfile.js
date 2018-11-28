@@ -4,13 +4,17 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps   = require('gulp-sourcemaps');
 const browserSync  = require('browser-sync').create();
 const { exec }     = require('child_process');
+const rename       = require('gulp-rename');
+const babel        = require('gulp-babel');
+const minify       = require("gulp-minify");
 
 var Paths = {
   HERE                 : './',
-  DIST                 : 'dist/',
+  DIST                 : './dist/',
   CSS                  : './assets/css/',
   SCSS_SOURCES         : './_scss/**/**',
-  SCSS                 : './_scss/main.scss'
+  SCSS                 : './_scss/main.scss',
+  JS                   : './assets/js/custom.js',
 };
 
 gulp.task('compile:scss', gulp.series(function(done) {
@@ -19,7 +23,18 @@ gulp.task('compile:scss', gulp.series(function(done) {
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer())
   .pipe(sourcemaps.write(Paths.HERE))
-  .pipe(gulp.dest(Paths.DIST));
+  .pipe(gulp.dest(Paths.DIST+"css/"));
+  done();
+}));
+
+gulp.task('compile:js', gulp.series(function(done) {
+  gulp.src(Paths.JS)
+  .pipe(rename('hackntx.js'))
+  .pipe(babel({
+    "plugins": ["transform-es2015-template-literals"]
+  }))
+  .pipe(minify())
+  .pipe(gulp.dest(Paths.DIST+"js/"));
   done();
 }));
 
@@ -28,7 +43,7 @@ gulp.task('watch', gulp.series(function (done) {
   done();
 }));
 
-gulp.task('build', gulp.series('compile:scss', function(done) {
+gulp.task('build', gulp.series('compile:scss', 'compile:js', function(done) {
   done();
 }));
 
@@ -43,7 +58,7 @@ gulp.task('jekyll:serve', gulp.series(function(done){
 }));
 
 // Task for building blog when something changed:
-gulp.task('jekyll', gulp.series('jekyll:serve', 'compile:scss'));
+gulp.task('jekyll', gulp.parallel('jekyll:serve', 'compile:scss', 'compile:js'));
 
 // Task for serving blog with Browsersync
 gulp.task('serve', gulp.series(function (done) {
