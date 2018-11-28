@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Hack NTX is a civic technology hackathon focused on spurring civic engagement, utilizing open data, improving open government policies, and bolstering smart city innovations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.hackntx.com" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:categories/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
 
 # Social
 twitter_username: techmilldenton
@@ -35,6 +35,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
 
 # SASS
 sass:

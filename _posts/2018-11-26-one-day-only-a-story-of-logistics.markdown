@@ -4,6 +4,8 @@ date: 2018-11-26T11:19:50-06:00
 categories: "Announcement"
 img: /assets/img/cardboard.jpg
 excerpt: "As you can see, we've made an update."
+redirect_from:
+  - /announcement/default/2018/11/26/one-day-only-a-story-of-logistics
 ---
 
 ## The Update
