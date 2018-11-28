@@ -34,6 +34,76 @@ description: Do you have your own civic tech idea?
 </div>
 
 <div id="ideas">
-	<div class="row">
-	</div>
 </div>
+
+<style>
+
+#ideas {
+	margin: 40px;
+}
+
+.idea--container {
+	background: rgba(0,0,0,.04);
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.idea--idea p {
+  font-weight: 700;
+}
+
+.idea--category {
+	background: #4daf5052;
+	border-radius: 10px;
+	display: inline-flex;
+	margin-top: 8px;
+	padding: 4px 8px;
+}
+
+.idea--meta-container a {
+	font-weight: 500;
+}
+
+</style>
+
+<script>
+fetch('https://sheetsu.com/apis/v1.0su/6167299f6e6e')
+.then(res => res.json())
+.then(json => {
+	/*
+
+	-- Response schema
+
+	Approved: ""
+	Category: "smart city"
+	Idea: "I'm submitting an idea."
+	Timestamp: "1543338950703"
+	Twitter: "danminshew"
+
+	*/
+
+// TODO: We probably want to add a check that idea is approved
+
+	let formatDate = date => new Date(Number(date)).toDateString()
+	let ideaTemplate = ({ Category, Idea, Timestamp, Twitter }) => `
+		<div class="idea--container">
+			<div class="idea--idea">
+				<p>${Idea}</p>
+			</div>
+			<div class="idea--meta-container">
+				<a href="https://twitter.com/${Twitter}">${Twitter}</a>
+				| ${formatDate(Timestamp)}
+			</div>
+			<div class="idea--category">
+				${Category}
+			</div>
+		</div>
+	`
+
+	$('#ideas').append(json.map(ideaTemplate))
+})
+.catch(e => console.log('error fetching ideas: ', e))
+
+
+
+</script>
