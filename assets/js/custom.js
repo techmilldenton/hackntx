@@ -104,9 +104,96 @@ jQuery.fn.serializeFormJSON = function () {
     // Parse URL params for notifications.
     parseNotifications();
 
+    // Sheetsu
     var $challengeForm = $("#challenge-form");
     $("input#timestamp", $challengeForm).val(Date.now());
     $challengeForm.attr("sheetsu-after-submit", window.location.href +"?notifcation=challenge");
 
-  });
+    // Category mapping object
+    var categories = {
+      "transportation": {
+        "color": "warning",
+        "icon": "bus"
+      },
+      "health": {
+        "color": "danger",
+        "icon": "heartbeat"
+      },
+      "utilities": {
+        "color": "info",
+        "icon": "lightbulb-o"
+      },
+      "safety": {
+        "color": "warning",
+        "icon": "exclamation-triangle"
+      },
+      "smart city": {
+        "color": "success",
+        "icon": "leaf"
+      },
+      "other": {
+        "color": "danger",
+        "icon": "cogs"
+      }
+    };
+
+    // Process challenge ideas
+    var $challengeIdeas = $("#challenge-ideas");
+    if ($challengeIdeas.length > 0) {
+
+      let ideaTemplate = (item) => `
+      <div class="col-md-4">
+        <div class="card bg-${item["category-color"]}">
+            <div class="card-body">
+              <h5 class="card-category card-category-social">
+                <i class="fa fa-${item["category-icon"]}"></i> ${item.Category}
+              </h5>
+              <h4 class="card-title">
+                "${item.Idea}"
+              </h4>
+            </div>
+            <div class="card-footer">
+              <div class="author">
+                <a href="https://twitter.com/${item.Twitter}">
+                  <img src="https://avatars.io/twitter/${item.Twitter}" alt="${item.Twitter} profile image" class="avatar img-raised">
+                  <span>${item.Twitter}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      fetch('https://sheetsu.com/apis/v1.0su/6167299f6e6e')
+      .then(res => res.json())
+      .then(json => {
+
+        // JSON Schema
+        /*
+        Approved: ""
+        Category: "smart city"
+        Idea: "I'm submitting an idea."
+        Timestamp: "1543338950703"
+        Twitter: "danminshew"
+        */
+
+        json.forEach(item => {
+          // Update JSON objects
+          item["category-color"] = categories[item.Category].color;
+          item["category-icon"] = categories[item.Category].icon;
+          if (!item.Twitter) {
+            item.Twitter = "twitter";
+          }
+
+          // Only add if post is approved.
+          if (item.Approved) {
+            $challengeIdeas.append(ideaTemplate(item))
+          }
+        });
+
+      })
+      .catch(e => console.log('error fetching ideas: ', e));
+
+    }
+  })
 })(jQuery);

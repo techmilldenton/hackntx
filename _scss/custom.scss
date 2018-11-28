@@ -55,6 +55,17 @@
 	}
 }
 
+#challenge-ideas {
+	.card {
+		.card-category {
+			text-transform: capitalize;
+		}
+	}
+	// .card, .card-size {
+	// 	width: 33.33333%;
+	// }
+}
+
 .navbar-nav .nav-item .nav-link.btn-success {
 	color: white;
 }
