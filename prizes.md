@@ -20,11 +20,14 @@ TechMill will be handing out a cash prize to the first place team, and a team pa
 			<img src="{{ "assets/img/chalk-google-home.jpg" | prepend: site.baseurl }}" alt="Chalk Google Hom Mini" class="img-fluid">
 		</div>
 		<div class="col-md-4 vertical-align-column">
-			<h3 class="text-center"><strong>1st Prize:</strong> $500 (minimum)</h3>
+			<h3 class="text-center"><strong>1st Prize:</strong> $500 (minimum)*</h3>
 			<h3 class="text-center"><strong>2nd Prize:</strong> Team pack of Google Home Minis</h3>
 		</div>
 		<div class="col-md-4">
 			<img src="{{ "assets/img/charcoal-google-home.jpg" | prepend: site.baseurl }}" alt="Charcoal Google Hom Mini" class="img-fluid">
 		</div>
+	</div>
+	<div class="row">
+		<small>* $100 per team member, up to 5 team members.</small>
 	</div>
 </div>
