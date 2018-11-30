@@ -38,6 +38,16 @@
           url: https://www.facebook.com/MajorLeagueHacking
         - name: twitter
           url: https://twitter.com/mlhacks
+    - name: Heroku
+      url: https://www.heroku.com/
+      img: /assets/img/sponsors/heroku.png
+      social_links:
+        - name: github
+          url: https://github.com/heroku
+        - name: facebook
+          url: https://facebook.com/heroku
+        - name: twitter
+          url: https://twitter.com/heroku
 
 # Community sponsors
 - name: Community
