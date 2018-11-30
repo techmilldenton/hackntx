@@ -88,7 +88,7 @@ permalink: /sponsors
 			<h3 class="mb-0">Smart City Tier</h3>
 			<h3 class="card-title mt-1 mb-3">$1500</h3>
 			<p>
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C7EJ8D4SYEW5W" title="Smart City Express Pay" alt="$2500 donation link" class="btn btn-success">Express Pay</a>
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H627FPUS3CL6E&source=url" title="Smart City Express Pay" alt="$2500 donation link" class="btn btn-success">Express Pay</a>
 				<br>
 				<a class="" href="mailto:sponsor@techmill.co?cc=kyletaylored@gmail.com&subject=HackNTX Sponsorship Inquiry&body=I'm interested in sponsoring the Hack NTX event.%0D%0A%0D%0ACompany name: <company name>%0D%0ACompany contact: <your name>%0D%0ASponsorship type: <in-kind | cash>%0D%0ASponsorship value: < amount >%0D%0AComments: <add below>">Contact Us</a>
 				</p>
@@ -112,7 +112,7 @@ permalink: /sponsors
 				<h3 class="mb-0">City Planner Tier</h3>
 				<h3 class="card-title mt-1 mb-3">$1000</h3>
 				<p>
-					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KE3SZJ7Z3NQ3W" class="btn btn-success" title="City Planner Express Pay" alt="$1000 donation link">Express Pay</a>
+					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H627FPUS3CL6E&source=url" class="btn btn-success" title="City Planner Express Pay" alt="$1000 donation link">Express Pay</a>
 					<br>
 					<a class="" href="mailto:sponsor@techmill.co?cc=kyletaylored@gmail.com&subject=HackNTX Sponsorship Inquiry&body=I'm interested in sponsoring the Hack NTX event.%0D%0A%0D%0ACompany name: <company name>%0D%0ACompany contact: <your name>%0D%0ASponsorship type: <in-kind | cash>%0D%0ASponsorship value: < amount >%0D%0AComments: <add below>">Contact Us</a>
 					</p>
@@ -135,7 +135,7 @@ permalink: /sponsors
 					<h3 class="mb-0">Civic Duties Tier</h3>
 					<h3 class="card-title mt-1 mb-3">≤ $500</h3>
 					<p>
-						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63FZDYQLX25LC" title="Civic Duties Express Pay" alt="General donation link" class="btn btn-success">Express Pay</a>
+						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H627FPUS3CL6E&source=url" title="Civic Duties Express Pay" alt="General donation link" class="btn btn-success">Express Pay</a>
 						<br>
 						<a class="" href="mailto:sponsor@techmill.co?cc=kyletaylored@gmail.com&subject=HackNTX Sponsorship Inquiry&body=I'm interested in sponsoring the Hack NTX event.%0D%0A%0D%0ACompany name: <company name>%0D%0ACompany contact: <your name>%0D%0ASponsorship type: <in-kind | cash>%0D%0ASponsorship value: < amount >%0D%0AComments: <add below>">Contact Us</a>
 						</p>
