@@ -2,6 +2,8 @@ toc:
   - title: About
     url: "#"
     children:
+      - title: Resources
+        url: /resources
       - title: Challenges
         url: /challenges
       - title: Rules

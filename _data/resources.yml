@@ -1,0 +1,85 @@
+- name: Bonsai
+  url: https://bonsai.io
+  twitter: bonsaisearch
+  categories: ['search']
+  note:
+- name: Algolia
+  url: https://www.algolia.com/for-open-source
+  twitter: algolia
+  categories: ['search']
+  note: Free for open source projects, but there is an application process.
+- name: Atom
+  url: https://atom.io/
+  twitter: atomeditor
+  categories: ['ide']
+  note:
+- name: Visual Studio Code (VSCode)
+  url: https://code.visualstudio.com
+  twitter: code
+  categories: ['ide']
+  note:
+- name: Digital Ocean
+  url: https://m.do.co/c/2c455a959f88
+  twitter: digitalocean
+  categories: ['hosting']
+  note: Get $100 in credit for signing up with a new account.
+- name: Vultr
+  url: https://www.vultr.com/
+  twitter: vultr
+  categories: ['hosting']
+  note: Will match dollar-for-dollar credit up to $100.
+- name: Google Cloud Platform
+  url: https://cloud.google.com/free/
+  twitter: gcpcloud
+  categories: ['hosting', 'api', 'platform']
+  note: $300 in free credits, plus lifetime limited free tier for most products.
+- name: Heroku
+  url: https://www.heroku.com/free
+  twitter: heroku
+  categories: ['hosting', 'platform']
+  note:
+- name: SourceTree
+  url: https://www.sourcetreeapp.com/
+  twitter: sourcetree
+  categories: ['git']
+  note:
+- name: Bitbucket
+  url: https://bitbucket.org
+  twitter: bitbucket
+  categories: ['git']
+  note: Free private repos, up to 50 min/month in CI pipelines.
+- name: GitLab
+  url: https://gitlab.com
+  twitter: gitlab
+  categories: ['git']
+  note: Unlimited free and private repos, up to 2000 min/mon in pipelines.
+- name: SendGrid
+  url: https://sendgrid.com/free/
+  twitter: sendgrid
+  categories: ['email']
+  note: Send up to 40,000 emails for 30 days, then send 100 emails/day free forever
+- name: Namecheap
+  url: https://www.namecheap.com/promos/amazing88s.aspx
+  twitter: namecheap
+  categories: ['email', 'domains']
+  note: Super cheap domain names.
+- name: Bitnami
+  url: https://bitnami.com/cloud/pricing
+  twitter: bitnami
+  categories: ['hosting', 'platform']
+  note: Deploy a micro or small instance for free.
+- name: Stackshare
+  url: https://stackshare.io
+  twitter: stackshareio
+  categories: ['reference']
+  note: Great place to find dev tools.
+- name: StartupStash
+  url: https://startupstash.com
+  twitter: startupstash
+  categories: ['reference']
+  note: Alternative source for general tech and non-technical resources.
+- name: Learn How To Program
+  url: https://www.learnhowtoprogram.com/tracks
+  twitter: epicodus
+  categories: ['education']
+  note: Free platform with courses for learning how to program.

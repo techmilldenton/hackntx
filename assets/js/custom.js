@@ -100,6 +100,18 @@ jQuery.fn.serializeFormJSON = function () {
     // Parse URL params for notifications.
     parseNotifications();
 
+    // init Isotope
+    var $grid = $('.card-container').isotope({
+      itemSelector: '.card-wrapper',
+
+    });
+
+    // bind filter button click
+    $('.filters-button-group').on( 'click', '.nav-link', function() {
+      var filterValue = $( this ).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+
     // Sheetsu
     var $challengeForm = $("#challenge-form");
     $("input#timestamp", $challengeForm).val(Date.now());
@@ -139,25 +151,25 @@ jQuery.fn.serializeFormJSON = function () {
 
       let ideaTemplate = (item) => `
       <div class="col-md-4">
-        <div class="card bg-${item["category-color"]}">
-            <div class="card-body">
-              <h5 class="card-category card-category-social">
-                <i class="fa fa-${item["category-icon"]}"></i> ${item.Category}
-              </h5>
-              <h4 class="card-title">
-                "${item.Idea}"
-              </h4>
-            </div>
-            <div class="card-footer">
-              <div class="author">
-                <a href="https://twitter.com/${item.Twitter}">
-                  <img src="https://avatars.io/twitter/${item.Twitter}" alt="${item.Twitter} profile image" class="avatar img-raised">
-                  <span>${item.Twitter}</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="card bg-${item["category-color"]}">
+      <div class="card-body">
+      <h5 class="card-category card-category-social">
+      <i class="fa fa-${item["category-icon"]}"></i> ${item.Category}
+      </h5>
+      <h4 class="card-title">
+      "${item.Idea}"
+      </h4>
+      </div>
+      <div class="card-footer">
+      <div class="author">
+      <a href="https://twitter.com/${item.Twitter}">
+      <img src="https://avatars.io/twitter/${item.Twitter}" alt="${item.Twitter} profile image" class="avatar img-raised">
+      <span>${item.Twitter}</span>
+      </a>
+      </div>
+      </div>
+      </div>
+      </div>
       `;
 
       fetch('https://sheetsu.com/apis/v1.0bu/6167299f6e6e')

@@ -236,6 +236,19 @@
 	}
 }
 
+#resources {
+	.card {
+		.card-footer, .card-body {
+			padding: 10px;
+		}
+	}
+	.bootstrap-tagsinput .tag {
+		&:hover {
+			padding-right: 8px;
+		}
+	}
+}
+
 @media all and (max-width: 768px) {
 	.page-header {
 		padding-top: 208px;
