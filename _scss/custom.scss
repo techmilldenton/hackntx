@@ -237,8 +237,8 @@
 }
 
 #resources {
-	.card {
-		.card-footer, .card-body {
+	.card-wrapper > .card {
+		.card-body, .card-footer {
 			padding: 10px;
 		}
 	}
