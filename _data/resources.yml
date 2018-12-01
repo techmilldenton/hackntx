@@ -2,7 +2,7 @@
   url: https://bonsai.io
   twitter: bonsaisearch
   categories: ['search']
-  note:
+  note: Create a hosted Elasticsearch environment.
 - name: Algolia
   url: https://www.algolia.com/for-open-source
   twitter: algolia
@@ -12,12 +12,12 @@
   url: https://atom.io/
   twitter: atomeditor
   categories: ['ide']
-  note:
+  note: An open source, hackable text editor by Github.
 - name: Visual Studio Code (VSCode)
   url: https://code.visualstudio.com
   twitter: code
   categories: ['ide']
-  note:
+  note: An open source, hackable text editor by Microsoft.
 - name: Digital Ocean
   url: https://m.do.co/c/2c455a959f88
   twitter: digitalocean
@@ -37,12 +37,12 @@
   url: https://www.heroku.com/free
   twitter: heroku
   categories: ['hosting', 'platform']
-  note:
+  note: Heroku is a cloud platform based on a managed container system.
 - name: SourceTree
   url: https://www.sourcetreeapp.com/
   twitter: sourcetree
   categories: ['git']
-  note:
+  note: A free Git client for Windows and Mac.
 - name: Bitbucket
   url: https://bitbucket.org
   twitter: bitbucket
