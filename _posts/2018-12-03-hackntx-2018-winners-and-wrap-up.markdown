@@ -6,6 +6,8 @@ tags: hackathon
 excerpt: >-
  We wrapped up our first civic tech hackathon on Saturday, December 1 at UNT Inspire Park, and our organizing team was blown away by the presentations!
 img: /assets/img/event/teams.jpg
+image:
+  path: /assets/img/event/teams.jpg
 ---
 
 What a day! We wrapped up our first civic tech hackathon on Saturday, December 1 at UNT Inspire Park, and our organizing team was blown away by the presentations! We had a wide range of participants ranging from the very experienced and seasoned developers to kids who have never used tools like Tableu before. All of them were able to learn something new and build something cool - and we'd call that a success.
