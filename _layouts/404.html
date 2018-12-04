@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body class="not-front {{ page.slug }} {{ page.body_class }}">
+
+	{%- include header.html -%}
+
+	<div class="page-header error-page header-filter" style="background-image: url('/assets/img/bg7.jpg')">
+		<!--   you can change the color of the filter page using: data-color="blue | green | orange | red | purple" -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{%- include footer.html -%}
+	{%- include modals.html -%}
+	{%- include scripts.html -%}
+</body>
+
+</html>
+

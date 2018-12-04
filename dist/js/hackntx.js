@@ -72,7 +72,18 @@ jQuery.fn.serializeFormJSON = function () {
     // Target your .container, .wrapper, .post, etc.
     $(".video-container").fitVids(); // Parse URL params for notifications.
 
-    parseNotifications(); // Sheetsu
+    parseNotifications(); // init Isotope
+
+    var $grid = $('.card-container').isotope({
+      itemSelector: '.card-wrapper'
+    }); // bind filter button click
+
+    $('.filters-button-group').on('click', '.nav-link', function () {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({
+        filter: filterValue
+      });
+    }); // Sheetsu
 
     var $challengeForm = $("#challenge-form");
     $("input#timestamp", $challengeForm).val(Date.now());
@@ -108,7 +119,7 @@ jQuery.fn.serializeFormJSON = function () {
     var $challengeIdeas = $("#challenge-ideas");
 
     if ($challengeIdeas.length > 0) {
-      let ideaTemplate = item => "\n      <div class=\"col-md-4\">\n        <div class=\"card bg-" + item["category-color"] + "\">\n            <div class=\"card-body\">\n              <h5 class=\"card-category card-category-social\">\n                <i class=\"fa fa-" + item["category-icon"] + "\"></i> " + item.Category + "\n              </h5>\n              <h4 class=\"card-title\">\n                \"" + item.Idea + "\"\n              </h4>\n            </div>\n            <div class=\"card-footer\">\n              <div class=\"author\">\n                <a href=\"https://twitter.com/" + item.Twitter + "\">\n                  <img src=\"https://avatars.io/twitter/" + item.Twitter + "\" alt=\"" + item.Twitter + " profile image\" class=\"avatar img-raised\">\n                  <span>" + item.Twitter + "</span>\n                </a>\n              </div>\n            </div>\n          </div>\n        </div>\n      ";
+      let ideaTemplate = item => "\n      <div class=\"col-md-4\">\n      <div class=\"card bg-" + item["category-color"] + "\">\n      <div class=\"card-body\">\n      <h5 class=\"card-category card-category-social\">\n      <i class=\"fa fa-" + item["category-icon"] + "\"></i> " + item.Category + "\n      </h5>\n      <h4 class=\"card-title\">\n      \"" + item.Idea + "\"\n      </h4>\n      </div>\n      <div class=\"card-footer\">\n      <div class=\"author\">\n      <a href=\"https://twitter.com/" + item.Twitter + "\">\n      <img src=\"https://avatars.io/twitter/" + item.Twitter + "\" alt=\"" + item.Twitter + " profile image\" class=\"avatar img-raised\">\n      <span>" + item.Twitter + "</span>\n      </a>\n      </div>\n      </div>\n      </div>\n      </div>\n      ";
 
       fetch('https://sheetsu.com/apis/v1.0bu/6167299f6e6e').then(res => res.json()).then(json => {
         // JSON Schema

@@ -43,8 +43,9 @@ sass:
   sass_dir: ./_scss
   # style: compressed
 
-# SEO
+# SEO / Social
 google_analytics: UA-51689839-6
+addthis: ra-54305991214faa92
 
 author: techmilldenton
 twitter:
@@ -58,6 +59,11 @@ social:
       - https://www.facebook.com/techmilldenton
       - https://www.linkedin.com/company/techmill-llc
       - https://github.com/techmilldenton
+
+# Collections
+collections:
+  people:
+    output: false
 
 # Jekyll defaults
 defaults:
@@ -75,6 +81,8 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
       category: "Default"
+      body_class: blog-post
+      layout: "post"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

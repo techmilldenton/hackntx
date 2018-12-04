@@ -1,27 +1,38 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!-- Blog content -->
+<div class="section section-text">
+  <div class="row">
+    <div class="col-md-8 ml-auto mr-auto">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-meta invisible" hidden>
+          <span class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</span><br>
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}</time><br>
+          {%- if page.author -%}
+          {% assign author = site.people | where:"slug", page.author | first %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author.name }}</span></span>
+          {%- endif -%}
+        </div>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+      </article>
+    </div>
   </div>
+</div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+<!-- Blog footer -->
+<div class="section section-blog-info">
+  <div class="row">
+    <div class="col-md-8 ml-auto mr-auto">
+      <hr>
+      {%- include components/profile-card.html person=page.author -%}
+    </div>
+  </div>
+</div>

@@ -11,6 +11,21 @@
                 {%- if page.description -%}
                 <h4>{{ page.description }}</h4>
                 {%- endif -%}
+                {%- if page.is_post -%}
+                <div class="row post-info mt-5">
+                    <div class="col-md-6 text-right">
+                        {%- include addthis.html -%}
+                    </div>
+                    <div class="col-md-6 text-left">
+                        {% capture words %}
+                          {{ page.content | number_of_words | minus: 250 }}
+                        {% endcapture %}
+                        {% unless words contains "-" %}
+                          <span class="btn btn-sm btn-link text-white"><i class="fa fa-clock-o pr-1"></i> {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}</span>
+                        {% endunless %}
+                    </div>
+                </div>
+                {%- endif -%}
             </div>
         </div>
     </div>
