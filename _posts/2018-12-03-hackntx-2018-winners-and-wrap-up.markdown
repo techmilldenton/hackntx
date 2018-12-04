@@ -36,7 +36,7 @@ The team had also considered integrating this approach with blockchain technolog
 
 ### 1st place: Watch-Dumpling (predictive traffic incidents)
 
-While their team name is compeltely unrelated, Dr. Shuyi Wang and Chunying Wang blew the judges away by applying deep learning to the Waze dataset that predicted traffic accidents in a specific area. After analyzing the dataset to identify traffic events, their team first identified what it means for an event to be "serious".
+While their team name is completely unrelated, Dr. Shuyi Wang and Chunying Wang blew the judges away by applying deep learning to the Waze dataset that predicted traffic accidents in a specific area. After analyzing the dataset to identify traffic events, their team first identified what it means for an event to be "serious".
 
 <blockquote class="blockquote">
 	<p>What do we consider serious traffic? Minor or medium traffic flow? Probably not, so we only focused on heavy and very heavy traffic jams as the base of our model.</p>
@@ -55,6 +55,7 @@ We're very grateful for the data sponsors for this event that provided the teams
 - North Texas Council of Governments (NTCOG)
 - 511DFW.org
 - Waze
+- Kapsch.net
 
 ### Next Steps
 If you're interested in open data or civic tech, join us in March 2019 for Open Data Day in DFW. This is a great opportunity to solve civic problems using open data in various ways. Historically, TechMill has hosted this event in Denton the past few years, but in 2019, we're working with local partners to help expand the event and make it a regional initiative as an opportunity for cities to bring their challenges to the table and see how we can address them!
