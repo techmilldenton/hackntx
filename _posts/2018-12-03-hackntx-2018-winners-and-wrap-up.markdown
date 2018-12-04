@@ -10,9 +10,9 @@ image:
   path: /assets/img/event/teams.jpg
 ---
 
-What a day! We wrapped up our first civic tech hackathon on Saturday, December 1 at UNT Inspire Park, and our organizing team was blown away by the presentations! We had a wide range of participants ranging from the very experienced and seasoned developers to kids who have never used tools like Tableu before. We even had a team take the data provided for the event and create a GraphQL API that makes the data easier to use in the future. All of them were able to learn something new and build something cool - and we'd call that a success.
+What a day! We wrapped up our first civic tech hackathon on Saturday, December 1 at UNT Inspire Park, and our organizing team was blown away by the presentations! We had a wide range of participants from the very experienced and seasoned developers to kids who have never used tools like Tableu before. We even had a team take the data provided for the event and create a GraphQL API that makes the data easier to use in the future. All of them were able to learn something new and build something cool - and we'd call that a success.
 
-Available to the teams were datasets from cities and local organizations that could serve as a foundation for their project. From the City of Denton, we had operation budget data for the past 2 years that needed to be visualized for easy summary. In addition, we had a months worth of traffic incident data from Waze, provided by the Nort Texas Council of Governments and [511DFW.org](http://511dfw.org). This data could've been used in a number of ways, anything from statistical analysis to predictive reporting.
+Available to the teams were datasets from cities and local organizations that could serve as a foundation for their project. From the City of Denton, we had operation budget data for the past 2 years that needed to be visualized for easy summary. In addition, we had a months worth of traffic incident data from Waze, provided by the North Texas Council of Governments and [511DFW.org](http://511dfw.org). This data could've been used in a number of ways, anything from statistical analysis to predictive reporting.
 
 ## The Winners
 
